@@ -6,7 +6,7 @@
         {
             Console.WriteLine("Eded daxil edin");
             int eded = Convert.ToInt32(Console.ReadLine());
-            bool sade = true;
+            int i = 0;
             
             if (eded < 1)
             {
@@ -23,19 +23,18 @@
                 { 
                   if(eded % a == 0)
                     {
-                        sade = false;
+                        i=1;
                         break;
                     }
                 }
-                if (sade)
+                if (i==0)
                 {
                     Console.WriteLine("Sade ededdir");
 
                 }
                 else
                 {
-                    Console.WriteLine("Murekkeb ededdir");
-
+                   Console.WriteLine("Murekkeb ededdir");
                 }
             }
         }
